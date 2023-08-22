@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing</title>
+    <style>
+
+        *{
+          box-sizing: border-box;  /*bunu yazmayınca box'ın borderlarının hepsi sayfada gözükmüyor*/
+        }
+        
+        #showcase{
+            background-color:#FEBBCC;
+            height: 500px;
+            width: 100%; /*parent genişliği kadar kendi içeriğini sığdır demiş oluyoruz(showcase'in parent'ı bu kodda main etiketi oluyor.)*//*bunu ileride oluşturduğumuz bir box'ın, sayfayı küçülttüğümüzde alta gitmemesi için ayarlayabilelim diye yazıyoruz*/
+            padding: 10px;
+            border: 5px solid red;
+            
+           
+        }
+        
+        #how-it-works{background-color: #FFCCCC;}
+
+       
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Contact</a>
+    </nav>
+
+   
+
+    <main>
+        <section id="showcase">
+            <h1>Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works"> 
+            <h2>How it works?</h2>
+        </section>
+    </main>
+    
+</body>
+</html>

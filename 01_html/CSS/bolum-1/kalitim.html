@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance(Kalıtım)</title>
+    <style>
+        body{font-size: 15px; color: blue;}
+        p{color: red;} /* em etiketine kalıtım yoluyla uygulanabildi*/
+        p{border: 1px solid green;}/* em etiketine kalıtım yoluyla uygulanamadı*/
+        em{border: inherit;} /*Böyle yazmanın mantığı, em etiketine en yakın olan kapsayıcı eleman p etiketi, p etiketinin inherit edilemeyen özelliğini inherit eder.Yani en yakın kapsayıcı elemandan bu özelliği al diyoruz. */
+        em{color: initial;}/* em , p de uygulanan color özelliği inherit ediliyordu ama bu olmasın istiyorsak da böyle yazıyoruz.Burada em etiketi tarayıcı varsayılan rengi aldı*/
+       
+    </style>
+</head>
+<body>
+     <main>
+        <section>
+            <h1 id="page-title" class="text-yellow">Welcome to MovieApp</h1>
+            <p>
+                Lorem ipsum dolor sit <em>amet consectetur </em> adipisicing elit. Non, quia.
+            </p>
+        </section>
+        <section>
+            <h2 id="page-subtitle" class="text-white ">How it works?</h2>
+        </section>
+    </main>
+</body>
+</html>

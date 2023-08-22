@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <table border="1" > <!-- width="70%" cellpadding="5" cellspacing="5"-->
+      <!-- kırmızı olması diğer tarayıcılarda desteklenmediğini gösteriyor -->
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>ürün ismi</th>
+          <th>fiyat</th>
+          <th>resim</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>iphone11</td>
+          <td>7000</td>
+          <td>1.jpeg</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td rowspan="2">iphone12</td>
+          <td>9000</td>
+          <td>2.jpeg</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <!-- <td>iphone13</td> -->
+          <td colspan="2">9000 - 3.jpeg</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
